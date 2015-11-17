@@ -2,11 +2,7 @@
 
 
 let Ghetto = require('ghetto').Ghetto
-let config = require('./config')
-let router = require('./router')
-
-
-let ghetto = new Ghetto(config, router)
+let ghetto = module.exports = new Ghetto(__dirname)
 // customize your ghetto instance here if needed
 
 
