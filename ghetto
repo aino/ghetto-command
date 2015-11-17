@@ -35,6 +35,12 @@ switch (argv._[0]) {
     console.log(`Created empty ghetto app ${appName}.`)
     break
 
+  case 'run':
+    let ghettoFile = argv._[1] || 'ghetto.js'
+    let ghetto = require(path.join(process.cwd(), ghettoFile))
+    ghetto.run(argv.port)
+    break
+
   default:
     console.error('No command supplied')
 }

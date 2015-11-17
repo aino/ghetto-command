@@ -1,6 +1,6 @@
 {
   "name": "ghetto-command",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Commandline tool for ghetto framework",
   "bin": {
     "ghetto": "./ghetto"
